@@ -2,7 +2,7 @@
   "name": "soundcoin-microsite",
   "description": "Promotional microsite for the SoundCoin platform.",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Ron Gierlach <rongierlach@gmail.com>",
   "dependencies": {
     "gatsby": "^1.9.17",
     "gatsby-link": "^1.6.15",
