@@ -17,5 +17,8 @@
     "build": "gatsby build",
     "dev": "gatsby develop -p 3000 -o"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "snazzy": "^7.0.0",
+    "standard": "^10.0.3"
+  }
 }
