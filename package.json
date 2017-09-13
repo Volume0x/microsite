@@ -17,7 +17,5 @@
     "build": "gatsby build",
     "dev": "gatsby develop -p 3000 -o"
   },
-  "devDependencies": {
-    "prettier": "^1.6.1"
-  }
+  "devDependencies": {}
 }
