@@ -15,7 +15,8 @@
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
-    "dev": "gatsby develop -p 3000 -o"
+    "dev": "gatsby develop -p 3000 -o",
+    "lint": "standard | snazzy"
   },
   "devDependencies": {
     "babel-eslint": "^8.0.0",
