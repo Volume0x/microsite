@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: 'SoundCoin'
   },
-  plugins: [`gatsby-plugin-react-helmet`],
+  plugins: [
+    'gatsby-plugin-react-helmet'
+  ]
 }
