@@ -8,9 +8,6 @@
     "gatsby-link": "^1.6.15",
     "gatsby-plugin-react-helmet": "^1.0.5"
   },
-  "keywords": [
-    "gatsby"
-  ],
   "license": "GPL-3.0",
   "main": "n/a",
   "scripts": {
