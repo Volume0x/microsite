@@ -26,5 +26,13 @@
   },
   "pre-commit": [
     "lint"
-  ]
+  ],
+  "standard": {
+    "parser": "babel-eslint",
+    "globals": [
+      "it",
+      "expect",
+      "describe"
+    ]
+  }
 }
