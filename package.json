@@ -6,6 +6,7 @@
   "dependencies": {
     "gatsby": "^1.9.17",
     "gatsby-link": "^1.6.15",
+    "gatsby-plugin-postcss-sass": "^1.0.12",
     "react-perfect-scrollbar": "^0.2.2",
     "tachyons": "^4.8.1"
   },
