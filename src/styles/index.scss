@@ -1,0 +1,18 @@
+@import '~tachyons';
+@import 'react-perfect-scrollbar/dist/css/styles.css';
+
+@font-face {
+  font-family: 'Panton Bold';
+  font-style: bold;
+  font-weight: 700;
+  src: url('/fonts/panton.eot'); /* IE9 Compat Modes */
+  src: local('Panton Bold'), local('Panton-Bold'),
+       url('/fonts/panton.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/panton.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/panton.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/panton.svg#Panton Bold') format('svg'); /* Legacy iOS */
+}
+
+.panton {
+  font-family: 'Panton Bold',  var(--sans-serif);
+}
