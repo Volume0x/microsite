@@ -1,8 +1,7 @@
 import React from 'react'
 import Scrollbar from 'react-perfect-scrollbar'
 
-import 'react-perfect-scrollbar/dist/css/styles.css'
-
+import '../styles/index.scss'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
