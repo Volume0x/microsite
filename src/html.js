@@ -1,6 +1,6 @@
 import React from 'react'
-// import favicon from './img/favicon.png'
-import shareMeta from './copy/share-meta'
+import favicon from './img/favicon.png'
+import shareMeta from './content/share-meta'
 
 let styles
 if (process.env.NODE_ENV === 'production') {
@@ -12,17 +12,19 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 const Html = ({ headComponents, body, postBodyComponents }) => (
-  <html className='h-100 ma0'>
+  <html>
     <head>
       <meta charSet='utf-8' />
       <meta httpEquiv='x-ua-compatible' content='ie=edge' />
       <meta name='viewport' content='width=420, initial-scale=0.76, shrink-to-fit=yes user-scalable=no' />
 
       {/* Fonts + Favicon */}
-      {/* <link rel='shortcut icon' type='image/png' href={favicon} /> */}
+      <link rel='shortcut icon' type='image/png' href={favicon} />
 
       {/* Put children first to establish tag precedence */}
       { headComponents }
+
+      <title>SoundCoin</title>
 
       <meta property='og:type' content='website' />
       <meta property='og:locale' content='en_US' />
@@ -47,8 +49,8 @@ const Html = ({ headComponents, body, postBodyComponents }) => (
         : null
       }
     </head>
-    <body className='h-100 ma0'>
-      <div className='h-100' id='___gatsby' dangerouslySetInnerHTML={{ __html: body }} />
+    <body className='panton white'>
+      <div id='___gatsby' dangerouslySetInnerHTML={{ __html: body }} />
       { postBodyComponents }
     </body>
   </html>
