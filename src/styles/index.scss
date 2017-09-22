@@ -1,6 +1,22 @@
 @import '~tachyons';
 @import 'react-perfect-scrollbar/dist/css/styles.css';
 
+:root {
+  --sans-serif: -apple-system, BlinkMacSystemFont,
+                'avenir next', avenir,
+                helvetica, 'helvetica neue',
+                ubuntu,
+                roboto,
+                noto,
+                'segoe ui',
+                arial,
+                sans-serif;
+  --white: #f8f8f8;
+  --blue: #2989e0;
+  --green: #00a9d0;
+  --purple: #7157f8;
+}
+
 @font-face {
   font-family: 'Panton Bold';
   font-style: bold;
@@ -14,5 +30,34 @@
 }
 
 .panton {
-  font-family: 'Panton Bold',  var(--sans-serif);
+  font-family: 'Panton Bold', var(--sans-serif);
+}
+
+.white { color: var(--white); }
+.bg-white { background-color: var(--white); }
+.b--white { border-color: var(--white); }
+.blue { color: var(--blue); }
+.bg-blue { background-color: var(--blue); }
+.b--blue { border-color: var(--blue); }
+
+.section {
+  z-index: 0;
+  position: relative;
+  background: linear-gradient(0deg, var(--green), var(--purple));
+  &:nth-child(even) {
+    color: #2989e0;
+    background: linear-gradient(180deg, var(--green), var(--purple));
+    &::before {
+      z-index: -1;
+      content: ' ';
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      display: block;
+      position: absolute;
+      // background: linear-gradient(90deg, rgba(248, 248, 248, 0.5) 0%, #f8f8f8 30%, #f8f8f8 70%, rgba(248, 248, 248, 0.5) 100%)
+      background: linear-gradient(90deg, rgba(248, 248, 248, 0.6) 0%, var(--white) 20%, var(--white) 80%, rgba(248, 248, 248, 0.6) 100%)
+    }
+  }
 }
