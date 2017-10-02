@@ -1,5 +1,6 @@
 export default {
-  id: 'home',
+  name: 'home',
   title: 'Hero',
-  headline: 'The self-sustaining platform for independent audio.'
+  headline: 'Fueled by Community',
+  subheadline: 'We\'re setting out to build a self-sustaining platform for independent audio.'
 }
