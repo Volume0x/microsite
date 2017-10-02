@@ -1,24 +1,23 @@
 export default [
   {
-    id: 'platform',
+    name: 'platform',
     title: 'Platform'
     // children: require()
   },
   // {
-  //   id: 'whitepaper',
+  //   name: 'whitepaper',
   //   title: 'Whitepaper'
   // },
   {
-    id: 'token',
+    name: 'token',
     title: 'Token'
   },
   {
-    id: 'roadmap',
+    name: 'roadmap',
     title: 'Roadmap'
-
   },
   {
-    id: 'team',
+    name: 'team',
     title: 'Team'
   }
 ]
