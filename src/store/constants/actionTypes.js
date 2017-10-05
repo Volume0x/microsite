@@ -7,8 +7,9 @@ const scopeTypes = (types = [], scope = 'App') => (
   )
 )
 
-const appTypes = [
-  'DID_SCROLL'
+const windowTypes = [
+  'DID_SCROLL',
+  'DID_RESIZE'
 ]
 
 const headerTypes = [
@@ -19,6 +20,6 @@ const headerTypes = [
 ]
 
 export default {
-  ...scopeTypes(appTypes),
+  ...scopeTypes(windowTypes, 'Window'),
   ...scopeTypes(headerTypes, 'Header')
 }

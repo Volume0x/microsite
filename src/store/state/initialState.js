@@ -1,9 +1,14 @@
 export default {
+  window: {
+    isSmall: null,
+    belowTop: null,
+    belowFold: null,
+    scrollY: 0
+  },
   header: {
-    visible: false,
-    nav: {
-      isSmall: null,
-      expanded: false
-    }
+    expanded: false,
+    hasTransition: false,
+    visibleBelowFold: false,
+    lastVisibleHeaderY: 0
   }
 }
