@@ -16,7 +16,7 @@ const SignupForm = () => (
           className={`
             outline-0
             f6 f5-l pa3
-            blue bg-white
+            blue bg-white-80
             placeholder-blue
             fl input-reset
             panton lh-solid bn
