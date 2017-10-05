@@ -15,7 +15,7 @@ const Header = props => {
       `}
       style={{
         transform: getTransform(props),
-        transition: props.hasTransition ? 'transform .6s' : 'transform .05s'
+        transition: props.hasTransition ? 'transform .6s' : '' // 'transform .05s'
       }}
     >
       <div className='pv3 pv4-ns flex justify-between items-center border-box '>
