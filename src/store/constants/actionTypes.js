@@ -7,6 +7,10 @@ const scopeTypes = (types = [], scope = 'App') => (
   )
 )
 
+const appTypes = [
+  'DID_SCROLL'
+]
+
 const headerTypes = [
   'SET_SMALL',
   'CLOSE_NAV',
@@ -15,5 +19,6 @@ const headerTypes = [
 ]
 
 export default {
+  ...scopeTypes(appTypes),
   ...scopeTypes(headerTypes, 'Header')
 }
