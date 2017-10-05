@@ -6,12 +6,15 @@ import LogoWithText from '../img/logos/soundcoin-white.svg'
 import LogoWithGradientWithText from '../img/logos/soundcoin-color.svg'
 
 const selectSvg = (withText, withGradient) => {
-  if (withText) return withGradient
-    ? LogoWithGradientWithText
-    : LogoWithText
-  else return withGradient
-    ? LogoIconWithGradient
-    : LogoIcon
+  if (withText) {
+    return withGradient
+      ? LogoWithGradientWithText
+      : LogoWithText
+  } else {
+    return withGradient
+      ? LogoIconWithGradient
+      : LogoIcon
+  }
 }
 
 const Logo = ({ withText, withGradient, ...props }) => (
