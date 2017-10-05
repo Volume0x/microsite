@@ -5,7 +5,6 @@ import ScrollLink from '../ScrollLink'
 const NavLink = ({negative, index, count, className, ...props}) => (
   <ScrollLink
     {...props}
-    offset={negative ? -128 : 0}
     activeClass={negative ? 'navlink-active' : ''}
     className={`
       dim dib v-top
