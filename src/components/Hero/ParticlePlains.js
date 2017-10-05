@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
 import * as THREE from 'three-canvas-renderer'
+import debounce from 'lodash.debounce'
 
-const SEPARATION = 100
 const AMOUNTX = 50
 const AMOUNTY = 50
+const SEPARATION = 100
+const DEBOUNCE_RATE = 250
 const PARTICLE_COLOR = 0xf8f8f8
 
 class ParticlePlains extends Component {
@@ -23,9 +25,20 @@ class ParticlePlains extends Component {
     super(props, context)
 
     this.init = this.init.bind(this)
-    this.onWindowResize = this.onWindowResize.bind(this)
     this.animate = this.animate.bind(this)
     this.renderScene = this.renderScene.bind(this)
+    this.handleResize = debounce(this.handleResize.bind(this), DEBOUNCE_RATE)
+  }
+
+  componentDidMount () {
+    this.windowHalfX = window.innerWidth / 2
+    this.windowHalfY = window.innerHeight / 2
+    this.init()
+    this.animate()
+  }
+
+  componentWillUnmount () {
+    window.removeEventListener('resize', this.handleResize)
   }
 
   init () {
@@ -55,10 +68,10 @@ class ParticlePlains extends Component {
     this.renderer.setPixelRatio(window.devicePixelRatio)
     this.renderer.setSize(window.innerWidth, window.innerHeight)
     this.container.appendChild(this.renderer.domElement)
-    window.addEventListener('resize', this.onWindowResize, false)
+    window.addEventListener('resize', this.handleResize)
   }
 
-  onWindowResize () {
+  handleResize () {
     this.windowHalfX = window.innerWidth / 2
     this.windowHalfY = window.innerHeight / 2
     this.camera.aspect = window.innerWidth / window.innerHeight
@@ -68,7 +81,7 @@ class ParticlePlains extends Component {
 
   animate () {
     window.requestAnimationFrame(this.animate)
-    this.renderScene()
+    if (window.scrollY < window.innerHeight) this.renderScene()
   }
 
   renderScene () {
@@ -89,18 +102,11 @@ class ParticlePlains extends Component {
     this.count += 0.1
   }
 
-  componentDidMount () {
-    this.windowHalfX = window.innerWidth / 2
-    this.windowHalfY = window.innerHeight / 2
-    this.init()
-    this.animate()
-  }
-
   render () {
     return (
       <div
-        className='z--1 absolute top-0 left-0 min-vh-100 w-100'
         ref={div => { this.container = div }}
+        className='z--1 absolute top-0 left-0 min-vh-100 w-100'
       />
     )
   }
