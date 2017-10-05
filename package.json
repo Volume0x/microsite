@@ -17,6 +17,7 @@
     "react-redux": "^5.0.6",
     "react-scroll": "^1.5.4",
     "react-waypoint": "^7.1.0",
+    "reduce-reducers": "^0.1.2",
     "redux": "^3.7.2",
     "tachyons": "^4.8.1",
     "three": "^0.87.1",
