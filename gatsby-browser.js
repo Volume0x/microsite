@@ -2,7 +2,7 @@ import React from 'react'
 import { anchorate } from 'anchorate'
 import { scroller } from 'react-scroll'
 import { Provider } from 'react-redux'
-import { ConnectedRouter as Router } from 'react-router-redux'
+import { Router } from 'react-router-dom'
 
 import createStore from './src/store'
 

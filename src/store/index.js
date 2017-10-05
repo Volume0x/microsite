@@ -1,6 +1,4 @@
-import createHistory from 'history/createMemoryHistory'
 import { compose, createStore, applyMiddleware } from 'redux'
-import { routerMiddleware as _routerMiddleware } from 'react-router-redux'
 
 import rootReducer from './reducers'
 import initialState from './state'
@@ -13,10 +11,7 @@ const composeEnhancers = (
     : compose
 )
 
-const createRouterMiddleware = compose(_routerMiddleware, createHistory)
-const middlewares = [
-  createRouterMiddleware()
-]
+const middlewares = []
 const middleware = composeEnhancers(
   applyMiddleware(...middlewares)
   /* additional enhancers */
