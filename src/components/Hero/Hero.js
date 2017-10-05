@@ -10,8 +10,11 @@ import FeatherIcon from '../FeatherIcon'
 import ParticlePlains from './ParticlePlains'
 
 const Hero = () => (
-  <Section id={hero.name} name={hero.name} className='min-vh-100'>
-    <ParticlePlains />
+  <Section id={hero.name} name={hero.name} className='min-vh-100 overflow-hidden'>
+    { process.env === 'production'
+      ? <ParticlePlains />
+      : null
+    }
     <article className='z-1 dt h-100'>
       <div className='dtc v-mid'>
         <h1 className='lh-solid f1 f-subheadline-m f-headline-l mt0'>{hero.headline}</h1>
