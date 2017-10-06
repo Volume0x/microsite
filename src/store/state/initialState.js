@@ -3,10 +3,11 @@ export default {
     isSmall: null,
     belowTop: null,
     belowFold: null,
-    scrollY: 0
+    scrollY: 0,
+    innerWidth: 0
   },
   header: {
-    expanded: false,
+    expanded: null,
     hasTransition: false,
     visibleBelowFold: false,
     lastVisibleHeaderY: 0

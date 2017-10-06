@@ -1,8 +1,14 @@
 import { header as defaultState } from '../state'
-// import { actionTypes as types } from '../constants'
+import { actionTypes as types } from '../constants'
 
 export default (state = defaultState, action) => {
   switch (action.type) {
+    case types.CLOSE_NAV:
+      return { ...state, expanded: false }
+    case types.RESET_NAV:
+      return { ...state, expanded: undefined }
+    case types.TOGGLE_NAV:
+      return { ...state, expanded: !state.expanded }
     default: return state
   }
 }
@@ -32,8 +38,4 @@ export const headerDidScroll = (state = defaultState, action, windowState) => {
     return { ...nextState, visibleBelowFold: false, hasTransition: false }
   }
   return nextState
-}
-
-export const headerDidResize = (state = defaultState, action, windowState) => {
-  return state
 }

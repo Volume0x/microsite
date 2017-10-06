@@ -3,7 +3,7 @@ import reduceReducers from 'reduce-reducers'
 
 import defaultState from '../state'
 import windowReducer from './window'
-import headerReducer, { headerDidScroll, headerDidResize } from './header'
+import headerReducer, { headerDidScroll } from './header'
 import { actionTypes as types } from '../constants'
 
 const combinedReducer = combineReducers({
@@ -16,10 +16,6 @@ const crossSliceReducer = (state = defaultState, action) => {
     case types.DID_SCROLL: return {
       window: windowReducer(state.window, action),
       header: headerDidScroll(state.header, action, state.window)
-    }
-    case types.DID_RESIZE: return {
-      window: windowReducer(state.window, action),
-      header: headerDidResize(state.header, action, state.window)
     }
     default: return state
   }

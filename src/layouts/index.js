@@ -29,12 +29,10 @@ class Layout extends React.Component {
   }
 
   handleScroll () {
-    // window.requestAnimationFrame(this.handleScroll)
     this.props.didScroll()
   }
 
   handleResize () {
-    // window.requestAnimationFrame(this.handleResize)
     this.props.didResize()
   }
 
@@ -52,10 +50,12 @@ class Layout extends React.Component {
   }
 }
 
-const mapDispatchToProps = dispatch => ({
-  didScroll: bindActionCreators(didScroll, dispatch),
-  didResize: bindActionCreators(didResize, dispatch)
-})
+const mapDispatchToProps = dispatch => (
+  bindActionCreators({
+    didScroll,
+    didResize
+  }, dispatch)
+)
 
 export default connect(
   null,

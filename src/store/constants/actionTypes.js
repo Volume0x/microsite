@@ -13,7 +13,6 @@ const windowTypes = [
 ]
 
 const headerTypes = [
-  'SET_SMALL',
   'CLOSE_NAV',
   'RESET_NAV',
   'TOGGLE_NAV'
