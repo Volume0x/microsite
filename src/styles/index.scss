@@ -61,15 +61,8 @@
   }
 }
 
-.navlink-active:after {
-  content: ' ';
+.navlink-active {
 
-  width: 100%;
-  position: relative;
-  left: 0;
-  bottom: 1px;
-  border-width: 0 0 1px;
-  border-style: solid;
 }
 
 .section {
