@@ -30,6 +30,9 @@
 
 .panton { font-family: 'Panton Bold', var(--sans-serif); }
 
+.bg-gradient { background: linear-gradient(0deg, var(--green), var(--purple)); }
+.bg-gradient-reverse { background: linear-gradient(180deg, var(--green), var(--purple)); }
+
 .white { color: var(--white); }
 .bg-white { background-color: var(--white); }
 .b--white { border-color: var(--white); }
