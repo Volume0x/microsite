@@ -34,7 +34,7 @@ class Header extends React.Component {
           transition: hasTransition || expanded ? 'transform .6s' : '' // 'transform .05s'
         }}
       >
-        <div className='pb2 pv3-m pv4-l flex flex-wrap justify-between items-center border-box '>
+        <div className='pb2 pv4-ns flex flex-wrap justify-between items-center border-box '>
           <LogoLink
             onClick={closeNav}
             negative={belowTop}

@@ -10,8 +10,8 @@ const NavLink = ({negative, index, count, className, ...props}) => (
       ${className}
       dim dib v-top
       mao
-      ${index > 0 ? 'ml2-m ml4-l' : 'ml0'}
-      ${index < count - 1 ? 'mr2-m mr4-l' : 'mr0 pb4 pb0-ns'}
+      ${index > 0 ? 'ml3-m ml4-l' : 'ml0'}
+      ${index < count - 1 ? 'mr3-m mr4-l' : 'mr0 pb4 pb0-ns'}
       ${negative ? 'blue bg-white' : 'white'}
       w-100 w-auto-ns
       pv4 pa0-ns
