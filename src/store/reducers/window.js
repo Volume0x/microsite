@@ -26,13 +26,9 @@ export default (state = defaultState, action) => {
       return nextState
 
     case types.DID_RESIZE:
-      // const { isSmall } = state
       const { innerWidth } = window
       nextState.innerWidth = innerWidth
 
-      // if (isSmall === null) {
-      //   return { ...nextState, isSmall: innerWidth < SMALL_WIDTH }
-      // }
       return { ...nextState, isSmall: innerWidth < SMALL_WIDTH }
     default: return state
   }
