@@ -10,33 +10,49 @@ import { closeNav, resetNav, toggleNav } from '../../store/constants/actionCreat
 
 class Header extends React.Component {
   componentWillUnmount () {
-    if (this.props.expanded !== null) {
-      this.props.resetNav()
-    }
+    const { expanded, resetNav } = this.props
+    if (expanded !== null) resetNav()
   }
 
   render () {
-    const { hasTransition, belowTop, sections, expanded, toggleNav } = this.props
+    const { hasTransition, belowTop, sections, expanded, closeNav, toggleNav } = this.props
     return (
       <header
         className={`
-          z-1 w-100 ph4 ph5-m ph6-l
-          ${belowTop ? 'fixed bg-white shadow-2' : 'absolute'}
+          z-1 w-100 ph4 ph5-m ph6-l bg-animate
+          ${expanded
+            ? (belowTop ? 'bg-white' : 'bg-gradient-reverse')
+            : 'bg-transparent'
+          }
+          ${belowTop
+            ? 'fixed bg-white shadow-2'
+            : 'absolute'
+          }
         `}
         style={{
           transform: getTransform(this.props),
-          transition: hasTransition ? 'transform .6s' : '' // 'transform .05s'
+          transition: hasTransition || expanded ? 'transform .6s' : '' // 'transform .05s'
         }}
       >
-        <div className='pv3 pv4-ns flex justify-between items-center border-box '>
-          <LogoLink negative={belowTop} />
-          <NavLinks negative={belowTop} sections={sections} />
+        <div className='pb2 pv3-m pv4-l flex flex-wrap justify-between items-center border-box '>
+          <LogoLink
+            onClick={closeNav}
+            negative={belowTop}
+            className='order-1 order-0-ns'
+          />
+          <NavLinks
+            onClick={closeNav}
+            negative={belowTop}
+            sections={sections}
+            expanded={expanded}
+          />
           <FeatherIcon
-            iconKey={expanded ? 'x' : 'menu'}
             onClick={toggleNav}
+            iconKey={expanded ? 'x' : 'menu'}
             className={`
               pointer link
               db dn-ns w2
+              order-2
               ${belowTop ? 'blue' : 'white'}
             `}
           />
@@ -52,11 +68,7 @@ const mapStateToProps = state => ({
 })
 
 const mapDispatchToProps = dispatch => (
-  bindActionCreators({
-    resetNav,
-    closeNav,
-    toggleNav
-  }, dispatch)
+  bindActionCreators({resetNav, closeNav, toggleNav}, dispatch)
 )
 
 export default connect(
