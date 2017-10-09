@@ -6,7 +6,7 @@ export default (state = defaultState, action) => {
     case types.CLOSE_NAV:
       return { ...state, expanded: false }
     case types.RESET_NAV:
-      return { ...state, expanded: undefined }
+      return { ...state, expanded: null }
     case types.TOGGLE_NAV:
       return { ...state, expanded: !state.expanded }
     default: return state
