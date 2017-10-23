@@ -9,7 +9,8 @@ const SignupForm = () => (
     noValidate
   >
     <fieldset className='cf bn ma0 pa0'>
-      <legend className='pa0 f4 f3-ns mb3'>Receive Email Updates</legend>
+      {/* <legend className='pa0 f4 f3-ns mb3'>Receive Email Updates</legend> */}
+      <legend className='pa0 f4 f3-ns mb3'>Let's do this.</legend>
       <div className='cf'>
         <label className='clip' htmlFor='EMAIL'>Email Address</label>
         <input
