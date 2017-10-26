@@ -1,16 +1,15 @@
 import React from 'react'
 
-import sections from '../content/sections'
 import Hero from '../components/Hero'
-import Section from '../components/Section'
+import sections from '../content/sections'
 
 const IndexPage = () => (
-  <div>
+  <main className='flex-auto'>
     <Hero />
-    {sections.map((props, i) =>
-      <Section key={i} {...props} />
+    {sections.map(({component: Cmp, id, name}) =>
+      <Cmp key={id} id={id} name={name} />
     )}
-  </div>
+  </main>
 )
 
 export default IndexPage
