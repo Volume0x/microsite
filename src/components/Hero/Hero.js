@@ -24,7 +24,7 @@ const Hero = () => (
           We're setting out to build a self-sustaining platform for independent audio.
         </h2>
         <h2 className='lh-title f3 f2-ns measure-narrow'>
-          It's gonna take a little help.
+          We need your help.
         </h2>
         <SignupForm />
       </div>
