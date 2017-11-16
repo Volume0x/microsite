@@ -2,9 +2,9 @@ import React from 'react'
 import { Github, Twitter, Slack } from 'react-feather'
 
 const iconList = [
-  ['slack', Slack, 'https://soundcoin.slack.com'],
-  ['github', Github, 'https://github.com/soundcoin-io'],
-  ['twitter', Twitter, 'https://twitter.com/soundcoin_io']
+  ['slack', Slack, 'https://slack.volume0x.com'],
+  ['github', Github, 'https://github.com/volume0x'],
+  ['twitter', Twitter, 'https://twitter.com/volume0x']
 ]
 
 const Socials = () => (

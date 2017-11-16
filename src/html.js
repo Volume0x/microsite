@@ -25,11 +25,11 @@ const Html = ({ headComponents, body, postBodyComponents }) => (
       {/* Put children first to establish tag precedence */}
       { headComponents }
 
-      <title>SoundCoin</title>
+      <title>Volume0x</title>
 
       <meta property='og:type' content='website' />
       <meta property='og:locale' content='en_US' />
-      <meta property='article:author' content='SoundCoin.io' />
+      <meta property='article:author' content='Volume0x.com' />
 
       {/* Facebook open graph meta */}
       <meta property='og:title' content={shareMeta.title} />
