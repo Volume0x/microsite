@@ -3,7 +3,7 @@ import React from 'react'
 import Section from '../Section'
 import Headline from '../Headline'
 import Paragraph from '../Paragraph'
-import Blockquote from '../Blockquote'
+// import Blockquote from '../Blockquote'
 
 const Platform = ({id}) => (
   <Section id={id}>
@@ -14,13 +14,12 @@ const Platform = ({id}) => (
         <h2 className='f2 f1-ns mt0'>What's Wrong</h2>
         <Paragraph>
           The current marketplaces for independent content are broken.
-          Unable to monetize, they sell out for the only value they can effectivley capture — <em>you, the user.</em>
+          Unable to ethically monetize, they sell out the only value that they can effectively capture — <em>you</em>, the user.
         </Paragraph>
         <Paragraph>
-          They take advantage of your attention with ads, your habits with invasive data collection, and even your whereabouts with location tracking.
+          They take advantage of your attention with unrelenting ads, record your habits using invasive data collection, and even track your whereabouts throughout the day and night. Even worse, the next indie darling is being pushed to the bottom in favor of sponsored content.
         </Paragraph>
         <Paragraph>
-          Even worse, the next indie darling is being pushed to the bottom in favor of sponsored content.
           If you're anything like us, you're tired of watching the big guys co-opt our creative communities.
         </Paragraph>
         <Paragraph>
@@ -46,13 +45,13 @@ const Platform = ({id}) => (
           <br />
           It starts with rethinking the value of content.
         </Paragraph>
-        <Blockquote className='ml-auto-ns mr0-ns f4 f3-l b'>
+        {/* <Blockquote className='ml-auto-ns mr0-ns f4 f3-l b'>
           Users don't want to own their favorite content,
           they just want to access it.
-        </Blockquote>
+        </Blockquote> */}
         <Paragraph className='ml-auto-ns mr-0-ns'>
-          We believe that <em>any</em> content with an audience has inherent market value.
-          The difficulty is just that most of the time that value is really, really small.
+          We believe that any content with an audience has inherent market value.
+          The difficulty is that, most of the time, this value is really, really small.
         </Paragraph>
         <Paragraph className='ml-auto-ns mr-0-ns'>
           So small, in fact, that no currency or pricing model has been divisible or accurate enough to capture it.
@@ -72,10 +71,10 @@ const Platform = ({id}) => (
           The advent of Ethereum has opened the floodgates for novel means of quantifying and commoditizing value.
         </Paragraph>
         <Paragraph>
-          Through tokenized protocols, once intangible assets like loyalty, attention, and reputation can now be earned, traded, and burned for monetary gain.
+          Through tokenized protocols, once intangible assets — like loyalty, attention, and reputation — can now be earned, traded, and burned for monetary gain.
         </Paragraph>
         <Paragraph>
-          Despite the massive hype, we believe this technology will reshape the way we support artists, subsize the cost of community infrastructure, and bring down the barriers to profiting from one's own work.
+          There's a reason for the hype, we believe this technology can reshape the way we support artists, subsize the cost of community infrastructure, and bring down the barriers to profiting from one's own work.
         </Paragraph>
         <Paragraph>
           <a href='#' className='link underline blue hover-purple'>
@@ -85,7 +84,7 @@ const Platform = ({id}) => (
       </article>
       <div className='tc flex-auto w-third-m w-40-l'>
         <h1>Animated Gif</h1>
-        {/* <Paragraph>light stroke SoundCoin tokens orbiting a wire ethereum logo like electrons around an atom</Paragraph> */}
+        {/* <Paragraph>light stroke tokens orbiting a wire ethereum logo like electrons around an atom</Paragraph> */}
       </div>
     </div>
   </Section>
