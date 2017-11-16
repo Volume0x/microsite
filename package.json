@@ -1,6 +1,6 @@
 {
-  "name": "soundcoin-microsite",
-  "description": "Promotional microsite for the SoundCoin platform.",
+  "name": "Volume0x-microsite",
+  "description": "Promotional microsite for the Volume0x platform.",
   "version": "1.0.0",
   "author": "Ron Gierlach <rongierlach@gmail.com>",
   "dependencies": {
