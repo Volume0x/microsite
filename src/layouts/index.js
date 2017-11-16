@@ -41,7 +41,9 @@ class Layout extends React.Component {
     return (
       <div className='flex flex-column flex-auto min-vh-100'>
         <Header sections={sections} />
-        { children() }
+        <main className='flex-auto'>
+          { children() }
+        </main>
         <Footer />
       </div>
     )
