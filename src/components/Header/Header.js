@@ -3,8 +3,8 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
 import LogoLink from './LogoLink'
-import NavLinks from './NavLinks'
-import FeatherIcon from '../FeatherIcon'
+// import NavLinks from './NavLinks'
+// import FeatherIcon from '../FeatherIcon'
 import getTransform from './getTransform'
 import { closeNav, resetNav, toggleNav } from '../../store/constants/actionCreators'
 
@@ -15,11 +15,11 @@ class Header extends React.Component {
   }
 
   render () {
-    const { hasTransition, belowTop, sections, expanded, closeNav, toggleNav } = this.props
+    const { hasTransition, belowTop, expanded, closeNav } = this.props
     return (
       <header
         className={`
-          z-1 w-100 ph4 ph5-m ph6-l bg-animate
+          z-1 w-100 bg-animate
           ${expanded
             ? (belowTop ? 'bg-white' : 'bg-gradient-reverse')
             : 'bg-transparent'
@@ -34,19 +34,19 @@ class Header extends React.Component {
           transition: hasTransition || expanded ? 'transform .6s' : '' // 'transform .05s'
         }}
       >
-        <div className='pb2 pv4-ns flex flex-wrap justify-between items-center border-box '>
+        <div className='pb2 pv4-ns ph4 ph5-m ph6-l mw9 center flex flex-wrap justify-between items-center border-box '>
           <LogoLink
             onClick={closeNav}
             negative={belowTop}
             className='order-1 order-0-ns'
           />
-          <NavLinks
+          {/* <NavLinks
             onClick={closeNav}
             negative={belowTop}
             sections={sections}
             expanded={expanded}
-          />
-          <FeatherIcon
+          /> */}
+          {/* <FeatherIcon
             onClick={toggleNav}
             iconKey={expanded ? 'x' : 'menu'}
             className={`
@@ -55,7 +55,7 @@ class Header extends React.Component {
               order-2
               ${belowTop ? 'blue' : 'white'}
             `}
-          />
+          /> */}
         </div>
       </header>
     )

@@ -69,7 +69,8 @@
 
 .section {
   z-index: 0;
-  position: relative;
+  // position: relative;
+  width: 100%;
   background: linear-gradient(0deg, var(--green), var(--purple));
   &:nth-child(even) {
     color: #2989e0;

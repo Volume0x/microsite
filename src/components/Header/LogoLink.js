@@ -7,14 +7,14 @@ const LogoLink = ({negative, className, ...props}) => (
   <ScrollLink
     {...props}
     to={'home'}
-    className={`tl white flex items-center w4 w3-m w5-l h3 ${className}`}
+    className={`tl white flex items-center w4 w5-ns h3 ${className}`}
   >
-    <Logo
+    {/* <Logo
       className={`dn db-m h3 ${negative ? 'blue' : 'white'}`}
       withGradient={negative}
-    />
+    /> */}
     <Logo
-      className={`db dn-m ${negative ? 'blue' : 'white'}`}
+      className={`db ${negative ? 'blue' : 'white'}`}
       withGradient={negative}
       withText
     />

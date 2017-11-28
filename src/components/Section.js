@@ -10,13 +10,13 @@ class Section extends PureComponent {
       <Element
         id={id}
         name={name}
-        className={`section pb5 ph4 ph5-m ph6-l ${className || ''}`}
+        className={`section pb5 ${className || ''}`}
       >
         <Waypoint
           bottomOffset={'4rem'}
           // onEnter={() => navigateTo(`#${name}`)}
         >
-          <div className='h-100 v-mid mw9 center'>
+          <div className='h-100 v-mid ph4 ph5-m ph6-l mw9 center'>
             {children}
           </div>
         </Waypoint>

@@ -1,16 +1,16 @@
 import React from 'react'
 
-import sections from '../../content/sections'
+// import sections from '../../content/sections'
 
 import Section from '../Section'
 import Headline from '../Headline'
 import SignupForm from './SignupForm'
-import ScrollLink from '../ScrollLink'
-import FeatherIcon from '../FeatherIcon'
+// import ScrollLink from '../ScrollLink'
+// import FeatherIcon from '../FeatherIcon'
 import ParticlePlains from './ParticlePlains'
 
 const Hero = () => (
-  <Section id='home' name='home' className='vh-100 min-vh-100 overflow-hidden'>
+  <Section id='home' name='home' className='h-100 absolute'>
     { process.env === 'production'
       ? <ParticlePlains />
       : null
@@ -29,14 +29,14 @@ const Hero = () => (
         <SignupForm />
       </div>
     </article>
-    <div className='z-1 absolute left-0 bottom-0 w-100 tc'>
+    {/* <div className='z-1 absolute left-0 bottom-0 w-100 tc'>
       <ScrollLink to={sections[0].name}>
         <FeatherIcon
           iconKey='chevron-down'
           className='dib w2 w3-ns hover-up'
         />
       </ScrollLink>
-    </div>
+    </div> */}
   </Section>
 )
 
