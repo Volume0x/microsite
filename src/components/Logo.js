@@ -1,9 +1,9 @@
 import React from 'react'
 
-import LogoIcon from '../img/logos/soundcoin-icon-white.svg'
-import LogoIconWithGradient from '../img/logos/soundcoin-icon-color.svg'
-import LogoWithText from '../img/logos/soundcoin-white.svg'
-import LogoWithGradientWithText from '../img/logos/soundcoin-color.svg'
+import LogoIcon from '../img/logos/volume0x-icon-white.svg'
+import LogoIconWithGradient from '../img/logos/volume0x-icon-color.svg'
+import LogoWithText from '../img/logos/volume0x-white.svg'
+import LogoWithGradientWithText from '../img/logos/volume0x-color.svg'
 
 const selectSvg = (withText, withGradient) => {
   if (withText) {
