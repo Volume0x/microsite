@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: '/',
   plugins: [
     'gatsby-plugin-purify-css',
     {
