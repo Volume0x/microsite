@@ -30,10 +30,12 @@
   "scripts": {
     "build": "gatsby build",
     "dev": "gatsby develop -p 3000 -o",
+    "deploy": "gatsby build && gh-pages --d public --repo git@github.com:Volume0x/volume0x.github.io.git",
     "lint": "standard | snazzy"
   },
   "devDependencies": {
     "babel-eslint": "^8.0.0",
+    "gh-pages": "^1.1.0",
     "pre-commit": "^1.2.2",
     "snazzy": "^7.0.0",
     "standard": "^10.0.3"
