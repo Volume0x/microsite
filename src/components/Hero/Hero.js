@@ -11,7 +11,7 @@ import ParticlePlains from './ParticlePlains'
 
 const Hero = () => (
   <Section id='home' name='home' className='h-100 absolute'>
-    <ParticlePlains />
+    { typeof window !== 'undefined' && <ParticlePlains /> }
     <article className='z-1 dt h-100'>
       <div className='dtc v-mid'>
         <Headline className='lh-solid f1 f-subheadline-m f-headline-l mt0'>
