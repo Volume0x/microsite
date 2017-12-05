@@ -11,11 +11,11 @@ const willEnter = () => ({
 })
 
 const willLeave = () => ({
-  opacity: spring(0, {stiffness: 120, damping: 14})
+  opacity: spring(0, {stiffness: 100, damping: 30})
 })
 
 const getStyles = () => ({
-  opacity: spring(1, {stiffness: 120, damping: 14})
+  opacity: spring(1, {stiffness: 100, damping: 30})
 })
 
 const FadeTransition = ({ children: child, index, className }) => (

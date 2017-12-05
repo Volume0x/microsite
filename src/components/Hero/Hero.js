@@ -25,10 +25,10 @@ const Hero = () => (
           Run by artists, small labels, curators, and consumers. The way it should be.
         </h2>
         <h2 className='db lh-title f3 f2-ns measure-narrow'>
-          Incentivizing cooperation with community roles, enforced by Ethereum smart contracts.
+          Distinct roles that incentivize cooperation, safely enforced by smart contracts.
         </h2>
         <h2 className='db lh-title f3 f2-ns measure-narrow'>
-          Using a tokenized protocol for royalties, licensing, voting, and so much more...
+          A tokenized protocol underpinning licensing, governance, royalties, and so much more...
         </h2>
         <h2 className='db lh-title f3 f2-ns measure-narrow'>
           Interested in the music marketplace of the future? We need your help.
