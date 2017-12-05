@@ -10,7 +10,7 @@ class Section extends PureComponent {
       <Element
         id={id}
         name={name}
-        className={`section pb5 ${className || ''}`}
+        className={`section  ${className || ''}`}
       >
         <Waypoint
           bottomOffset={'4rem'}

@@ -5,7 +5,7 @@ import { bindActionCreators } from 'redux'
 
 import '../styles/index.scss'
 import Header from '../components/Header'
-import Footer from '../components/Footer'
+// import Footer from '../components/Footer'
 import sections from '../content/sections'
 import { didScroll, didResize } from '../store/constants/actionCreators'
 
@@ -42,7 +42,7 @@ class Layout extends React.Component {
       <div className='flex flex-column flex-auto min-vh-100'>
         <Header sections={sections} />
         { children() }
-        <Footer />
+        {/* <Footer /> */}
       </div>
     )
   }

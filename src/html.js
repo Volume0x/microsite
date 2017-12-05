@@ -50,7 +50,7 @@ const Html = ({ headComponents, body, postBodyComponents }) => (
         : null
       }
     </head>
-    <body className='panton white overflow-hidden'>
+    <body className='panton white overflow-x-hidden'>
       <div id='___gatsby' dangerouslySetInnerHTML={{ __html: body }} />
       { postBodyComponents }
     </body>
