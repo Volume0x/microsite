@@ -27,10 +27,10 @@ const Hero = () => (
         <h2 className='db lh-title f3 f2-ns measure-narrow'>
           Incentivizing cooperation with community roles, enforced by Ethereum smart contracts.
         </h2>
-        <h2>
+        <h2 className='db lh-title f3 f2-ns measure-narrow'>
           Using a tokenized protocol for royalties, licensing, voting, and so much more...
         </h2>
-        <h2 className='lh-title f3 f2-ns measure-narrow'>
+        <h2 className='db lh-title f3 f2-ns measure-narrow'>
           Interested in the music marketplace of the future? We need your help.
         </h2>
       </TextTransition>
